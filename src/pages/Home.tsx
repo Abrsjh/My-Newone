@@ -5,11 +5,6 @@ import {
   Typography,
   Button,
   Grid,
-  Card,
-  CardContent,
-  Avatar,
-  Rating,
-  useTheme,
 } from '@mui/material';
 import { ArrowForward, PlayArrow } from '@mui/icons-material';
 import { motion } from 'framer-motion';
@@ -17,18 +12,11 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
-  const theme = useTheme();
-
-  return (
-    <>
-          </>
-  );
-};
-
-export default Home;
-
-const Home: React.FC = () => {
-  const theme = useTheme();
+  const hospitalInfo = {
+    name: 'MedCenter Excellence',
+    tagline: 'Caring Beyond Medicine',
+    description: 'A leading healthcare institution committed to providing exceptional medical care with state-of-the-art facilities and compassionate service.'
+  };
 
   return (
     <>
